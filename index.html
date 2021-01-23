@@ -1,0 +1,32 @@
+<html>
+
+<head>
+  <title>monke</title>
+  <script>
+    function monke() {
+      new Audio("./monke.mp3").play();
+      var monk = document.createElement("img");
+      monk.setAttribute("src", "monke.jpeg");
+      monk.setAttribute("class", "monke");
+      monk.style.left =Math.floor(Math.random()*100).toString() + "vw";
+      monk.style.top = Math.floor(Math.random() * 100).toString() + "vh";
+      document.getElementById("monke").appendChild(monk)
+    }
+  </script>
+  <style>
+    body {
+      width: 100vw;
+      height: 100vh;
+    }
+    .monke {
+      position: absolute;
+      width: 400px;
+    }
+  </style>
+</head>
+
+<body onClick="monke()" id="monke">
+  where monke (click anywhere)
+</body>
+
+</html>
